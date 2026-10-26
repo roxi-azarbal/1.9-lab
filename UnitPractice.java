@@ -109,7 +109,7 @@ public class UnitPractice {
         int count = 0;
 
         for (int i = 0; i < str.length() - 3; i++) {
-            if (str.substring(i, i + 2) == "co" && str.substring(i + 3, i + 4) == "e") {
+            if (str.substring(i, i + 2) == "co" && str.substring(i + 3, i + 4).equals("e")) {
                 count++;
             }
         }
@@ -201,7 +201,7 @@ public class UnitPractice {
         if (a.length() >= b.length()) {
             return a.substring(a.length() - b.length()).equals(b);
         } else {
-            return a.substring(b.length() - a.length()).equals(a);
+            return b.substring(b.length() - a.length()).equals(a);
         }
     }
 }
